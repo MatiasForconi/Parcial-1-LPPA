@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Formulario de Registro</h1>
+    </div>
+    <div class="main">
+        <form>
+            <label for="username">Nombre:</label>
+            <input type="text"  name="username" id="username" placeholder="Ingrese su nombre ">
+            <p id="usernamerError" class="error"></p>
+            <label for="userlastname">Apellido:</label>
+            <input type="text"  name="userlastname" id="userlastname" placeholder="Ingrese su apellido ">
+            <p id="userlastnameError" class="error"></p>
+            <label for="useremail">Email:</label>
+            <input type="email"  name="useremail" id="useremail" placeholder="Ingrese su correo ">
+            <p id="useremailError" class="error"></p>
+            <label for="userage">Edad:</label>
+            <input type="text"  name="userage" id="userage" placeholder="Ingrese su edad ">
+            <p id="userageError" class="error"></p>
+            <label for="country">Pais:</label>
+            <select id="country" name="country">
+                <option class="ar" value="argentina">Argentina</option>
+                <option class="ar" value="chile">Chile</option>
+                <option class="ar" value="brasil">Brasil</option>
+                <option class="ar" value="uruguay">Uruguay</option>
+            </select>
+            <p id="paisError" class="error"></p>
+            <label for="comentary">Comentario:</label>
+            <textarea id="comentary" name="comentary" placeholder="Escribe algo.."></textarea>
+            <p id="comentaryError" class="error"></p>
+            <button id="send" type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
