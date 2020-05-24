@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="app.js"></script>
 </head>
@@ -12,19 +13,46 @@
         <h1>Formulario de Registro</h1>
     </div>
     <div class="main">
-        <form>
+        <form action="#" method="POST" onsubmit="return validar();">
             <label for="username">Nombre:</label>
             <input type="text"  name="username" id="username" placeholder="Ingrese su nombre ">
-            <p id="usernamerError" class="error"></p>
+            <p id="usernameError" class="error"></p>
             <label for="userlastname">Apellido:</label>
             <input type="text"  name="userlastname" id="userlastname" placeholder="Ingrese su apellido ">
             <p id="userlastnameError" class="error"></p>
             <label for="useremail">Email:</label>
             <input type="email"  name="useremail" id="useremail" placeholder="Ingrese su correo ">
             <p id="useremailError" class="error"></p>
-            <label for="userage">Edad:</label>
-            <input type="text"  name="userage" id="userage" placeholder="Ingrese su edad ">
+            <label for="age">Edad:</label>
+            <input type="text"  name="age" id="age" placeholder="Ingrese su edad ">
             <p id="userageError" class="error"></p>
+            <label for="gender">Sexo:</label>
+            <p class="gen">
+            <input type="radio"  name="gender" id="gender">Femenino</input>
+            </p>
+            <p class="gen">
+            <input type="radio"  name="gender" id="gender">Masculino</input>
+            </p>
+            <p class="gen">
+            <input type="radio"  name="gender" id="gender">Otro</input>
+            </p>
+            <p>
+            <label for="interest">Temas de interes:</label></p>
+            <p>
+            <input id="interest" type="checkbox"></input>
+             <label>Deporte</label></p>
+            <p>
+            <input id="interest" type="checkbox"></input>
+            <label>Musica</label></p>
+            <input id="interest" type="checkbox"></input>
+            <label>Juegos</label></p>
+            <p>
+            <input id="interest" type="checkbox"></input>
+            <label>Tecnologia</label></p>
+            <p>
+            <input id="interest" type="checkbox"></input>
+            <label>Otros</label></p>
+            <p id="genderError" class="error"></p>
             <label for="country">Pais:</label>
             <select id="country" name="country">
                 <option class="ar" value="argentina">Argentina</option>
