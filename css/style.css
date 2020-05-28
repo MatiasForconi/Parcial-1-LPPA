@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header {
+    margin-top: 0;
+    padding: 0px;
+    background-color: rgb(145, 100, 18);
+    color: #fff;
+    height: 70px;
+}
+
+#header h1 {
+    margin-left: 15px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(105, 156, 197);
+    width:100%;   
+}
+
+form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 35px;
+}
+
+button[type=submit] {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: rgb(212, 36, 36);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+}
+  
+button[type=submit]:hover {
+    background-color: #ad220a;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    display: flex;
+    transition: 0.5s;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    background-color: rgb(223, 171, 128);
+}
+
+textarea{
+    height: 100px;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+}
+
+input {
+    display: flex;
+    flex-direction: column; 
+}
+
+input[type="radio"]{
+    display: inline-block;
+}
+
+div.fm {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    color: rgb(158, 13, 20);
+    width: 25%;
+}
+
+input[type="checkbox"] + label {
+   color: rgb(2, 109, 2);
+}   
+
+div{
+    display: flex;
+    flex-direction: column; 
+}
+
+div.int{
+    display: flex;
+    flex-direction: initial;
+    align-items: baseline;
+    line-height: 40px;   
+}
+
+div input{
+    margin-right: 10px;
+}
+
+select:hover{
+    background-color: rgba(44, 175, 4, 0.747);
+}
+
+div.countries{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+select option{
+    background-color: rgb(96, 228, 107);
+}
+
+
+@media screen and (min-width: 450px) {
+    div.fm{
+        display: flex;
+        flex-direction: row;
+    }
+}
